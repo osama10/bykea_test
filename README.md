@@ -1,4 +1,4 @@
-# Bykea Recruitement Test
+# Bykea Recruitement Test (Contacts with Location on Map)
 This project is a master detail application that shows contacts list on master view while detail view when yout ap on any list.
 User's location can also be seen on the map
 
