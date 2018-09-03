@@ -38,6 +38,7 @@ class ContactListTableViewController: UITableViewController,AlertsPresentable {
             detailVC.inject(viewModel)
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
+        
         viewModel.showAlert = { [weak self] (title, message) in
             guard let `self` = self else { return }
             self.showAlert(with: title, and: message)
@@ -68,7 +69,7 @@ extension ContactListTableViewController{
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return CGFloat(self.viewModel.rowHeight)
     }
 }
 

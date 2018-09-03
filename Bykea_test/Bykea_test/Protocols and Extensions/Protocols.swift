@@ -9,48 +9,54 @@
 import Foundation
 import UIKit
 
-protocol SegueHandlerType {
-    associatedtype SegueIdentifier: RawRepresentable
-}
-
-extension SegueHandlerType where Self: UIViewController,
-    SegueIdentifier.RawValue == String
-{
-    
-    func performSegueWithIdentifier(segueIdentifier: SegueIdentifier,
-                                    sender: AnyObject?) {
-        performSegue(withIdentifier: segueIdentifier.rawValue, sender: sender)
-    }
-    
-    func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier {
-        
-        guard let identifier = segue.identifier, let segueIdentifier = SegueIdentifier(rawValue: identifier) else {fatalError("Invalid segue identifier \(String(describing: segue.identifier)).") }
-        
-        return segueIdentifier
-        
-    }
-}
-
-
 
 protocol Injectable {
+    /**
+     For injecting dependencies to ViewControllers .
+     
+     - T : Generic Param
+     - inject : function recieves dependency
+     */
+    
     associatedtype T
     func inject(_: T)
-   // func assertDependencies()
 }
 
-protocol ReusableView : class {  static var reuseIdentifier : String {get} }
+protocol ReusableView : class {
+    /**
+     For making the handling of tableviewcell easier and effiecient.
+    - reuseIdentifier : cell reuse identifier
+     */
+   
+    static var reuseIdentifier : String {get}
+}
 
+protocol NibLoadableView : class {
+    /**
+     For loading nib . It's function can be found in extension file.
+     - nibName : Name of the nib
+     */
+   
+    static var nibName : String {get}
+    
+}
 
-
-protocol NibLoadableView : class { static var nibName : String {get} }
-
-
+//
 protocol StoryboardInitializable {
+    /**
+     For initializeing story board and instantiaing ViewController .
+     
+     - storyboardIdentifier : Should be same as class name
+     - storyboardName : storyboard enum
+     - instantiateViewController : for instantiating viewcontroller
+     */
     static var storyboardIdentifier: String { get }
     static var storyboardName: UIStoryboard.Storyboard { get }
     static func instantiateViewController() -> Self
 }
 
-protocol AlertsPresentable : class {}
+protocol AlertsPresentable : class {     /**
+     For Showing alert. It has a protocol extensions in extension file
+     */
+ }
 

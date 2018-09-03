@@ -10,7 +10,6 @@
 import Foundation
 import UIKit
 import CoreLocation
-//import Alamofire
 
 extension Int{
     
@@ -31,6 +30,10 @@ extension String {
     }
 }
 extension UIStoryboard {
+    /**
+     - Storyboard : enum for saving storyboard name
+     - storyboard : initialise storyboard
+     */
     enum Storyboard: String {
         case main
         var filename: String {
@@ -45,6 +48,11 @@ extension UIStoryboard {
 }
 
 extension StoryboardInitializable where Self: UIViewController {
+    /**
+     define in protocol file
+     
+     */
+    
     static var storyboardIdentifier: String {
         return String(describing: self)
     }
@@ -60,6 +68,11 @@ extension StoryboardInitializable where Self: UIViewController {
 }
 
 extension NibLoadableView where Self : UIView {
+    /**
+     - nibName : Nib name
+     - loadNib - for loading Nib
+     
+     */
     static var nibName : String {
         return String(describing: self).components(separatedBy: ".").last!
     }
@@ -71,6 +84,12 @@ extension NibLoadableView where Self : UIView {
 }
 
 extension UITableView {
+    /**
+     - register : for registring TableViewCell from nib
+     - dequeResuseableCell - type safe dequeReuseableCell
+     - setdelegateAndDatasource - for setting delegate and datasource for view and viewcontroller
+     
+     */
     func register<T:UITableViewCell>(_ : T.Type) where T : ReusableView , T : NibLoadableView{
         let nib = UINib(nibName: T.nibName, bundle: nil)
         register(nib, forCellReuseIdentifier: T.reuseIdentifier)
@@ -96,7 +115,9 @@ extension UITableView {
 }
 
 extension AlertsPresentable where Self : UIViewController {
-    
+    /**
+     - ShowAlert : function to show alert
+     */
     func showAlert(with title: String? = nil , and message: String? = nil){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -109,6 +130,9 @@ extension AlertsPresentable where Self : UIViewController {
 }
 
 extension ReusableView where Self : UIView {
+    /**
+     - reuseIdentifier : Gets reuseIdentifier by taking the name of class
+    */
     static var reuseIdentifier : String {
         return String(describing: self).components(separatedBy: ".").last!
     }

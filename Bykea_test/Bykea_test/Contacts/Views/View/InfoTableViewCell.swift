@@ -19,12 +19,14 @@ class InfoTableViewCell: UITableViewCell, ReusableView, NibLoadableView {
         super.awakeFromNib()
         self.selectionStyle = .none
     }
-
+    
+    // for initial cell configuiration
     func configureCell(with viewModel : InfoTableViewCellViewModel){
         self.viewModel = viewModel
         self.setData()
     }
    
+    //for setting cell witht the data
     private func setData(){
         self.primaryTextLabel.text = self.viewModel.data.primaryText
         self.secondaryTextLabel.text = self.viewModel.data.secondaryText

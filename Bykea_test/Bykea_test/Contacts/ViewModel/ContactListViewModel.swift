@@ -13,8 +13,8 @@ protocol ContactListViewModel {
     var contactService : ContactServices{get}
     var contactList : [ContactModel]{get}
     var contactCount : Int {get}
-    
-    //func getContact(having id : Int)->ContactModel?
+    var rowHeight : Int{get}
+
     func getAllContacts()
     func didTapOnRow(at index : Int)
     func getInfoTableViewCellViewModel(of index : Int)->InfoTableViewCellViewModel
@@ -29,7 +29,8 @@ class ContactListViewModelImp : ContactListViewModel{
    
     var contactList: [ContactModel]
     var contactService: ContactServices
-   
+    var rowHeight: Int = 70
+    
     var isLoading: ((Bool) -> ())?
     var reloadData: (() -> ())?
     var showDetailView: ((ContactDetailViewModel) -> ())?
