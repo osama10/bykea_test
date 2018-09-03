@@ -6,3 +6,6 @@ User's location can also be seen on the map
 - Approach Used : Protcol Oriented Programming 
 - Architecture : Protocol Oriented MVVM (POMVVM)
 - Libraries : GoogleMaps, Alamofire, ObjectMapper, Toast
+
+
+For any query or information contact @ osama.binbashir@yahoo.com
