@@ -1,0 +1,11 @@
+platform :ios, '10.0'
+
+target 'Bykea_test' do
+  use_frameworks!
+
+   	pod 'GoogleMaps'
+    pod 'GooglePlaces'
+	pod 'Alamofire', '~> 4.2.0'
+    pod 'ObjectMapper', '~> 2.2'
+
+end

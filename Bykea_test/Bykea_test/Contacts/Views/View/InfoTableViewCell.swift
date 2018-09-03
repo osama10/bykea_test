@@ -9,13 +9,25 @@
 import UIKit
 
 class InfoTableViewCell: UITableViewCell, ReusableView, NibLoadableView {
+   
     @IBOutlet weak var primaryTextLabel: UILabel!
     @IBOutlet weak var secondaryTextLabel : UILabel!
    
+    var viewModel : InfoTableViewCellViewModel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
     }
 
+    func configureCell(with viewModel : InfoTableViewCellViewModel){
+        self.viewModel = viewModel
+        self.setData()
+    }
+   
+    private func setData(){
+        self.primaryTextLabel.text = self.viewModel.data.primaryText
+        self.secondaryTextLabel.text = self.viewModel.data.secondaryText
+    }
     
 }

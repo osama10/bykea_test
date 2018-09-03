@@ -25,7 +25,11 @@ extension Double{
     }
 }
 
-
+extension String {
+    var toDouble : Double{
+        return Double(self) ?? 0.0
+    }
+}
 extension UIStoryboard {
     enum Storyboard: String {
         case main
@@ -89,4 +93,23 @@ extension UITableView {
         self.dataSource = view as? UITableViewDataSource
     }
     
+}
+
+extension AlertsPresentable where Self : UIViewController {
+    
+    func showAlert(with title: String? = nil , and message: String? = nil){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(action)
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
+}
+
+extension ReusableView where Self : UIView {
+    static var reuseIdentifier : String {
+        return String(describing: self).components(separatedBy: ".").last!
+    }
 }

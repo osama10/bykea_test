@@ -7,12 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D696DBA09ED6FFB197FFCCE /* Pods_Bykea_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C999C50E64D3618802702F7 /* Pods_Bykea_test.framework */; };
 		4A35BCDE213BFFD2007B80CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35BCDD213BFFD2007B80CF /* AppDelegate.swift */; };
-		4A35BCE0213BFFD2007B80CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35BCDF213BFFD2007B80CF /* ViewController.swift */; };
 		4A35BCE3213BFFD2007B80CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A35BCE1213BFFD2007B80CF /* Main.storyboard */; };
 		4A35BCE5213BFFD3007B80CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A35BCE4213BFFD3007B80CF /* Assets.xcassets */; };
 		4A35BCE8213BFFD3007B80CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A35BCE6213BFFD3007B80CF /* LaunchScreen.storyboard */; };
-		4A35BCF3213BFFD3007B80CF /* Bykea_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A35BCF2213BFFD3007B80CF /* Bykea_testTests.swift */; };
+		4AA75C97213C10880064242E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75C96213C10880064242E /* Constants.swift */; };
+		4AA75C99213C10A10064242E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75C98213C10A10064242E /* Utils.swift */; };
+		4AA75C9C213C10C30064242E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75C9B213C10C30064242E /* Protocols.swift */; };
+		4AA75C9E213C10D50064242E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75C9D213C10D50064242E /* Extensions.swift */; };
+		4AA75CA1213C14400064242E /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CA0213C14400064242E /* ContactDetailViewController.swift */; };
+		4AA75CA3213C14820064242E /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CA2213C14820064242E /* ContactListTableViewController.swift */; };
+		4AA75CA7213C16A80064242E /* ContactListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CA6213C16A80064242E /* ContactListTableViewCell.swift */; };
+		4AA75CAA213C1F230064242E /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CA8213C1F230064242E /* InfoTableViewCell.swift */; };
+		4AA75CAB213C1F230064242E /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA75CA9213C1F230064242E /* InfoTableViewCell.xib */; };
+		4AA75CAD213C254C0064242E /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CAC213C254C0064242E /* AlamofireManager.swift */; };
+		4AA75CB1213C25E70064242E /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CB0213C25E70064242E /* RequestModel.swift */; };
+		4AA75CB3213C25F30064242E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CB2213C25F30064242E /* ResponseModel.swift */; };
+		4AA75CB6213C26CA0064242E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CB5213C26CA0064242E /* UserModel.swift */; };
+		4AA75CB9213C27A90064242E /* Rotues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CB8213C27A90064242E /* Rotues.swift */; };
+		4AA75CBB213C29FF0064242E /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CBA213C29FF0064242E /* Url.swift */; };
+		4AA75CBD213C2DC30064242E /* WebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CBC213C2DC30064242E /* WebManager.swift */; };
+		4AA75CC2213C2E570064242E /* ContactServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CC1213C2E570064242E /* ContactServices.swift */; };
+		4AA75CC4213C2EFE0064242E /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CC3213C2EFE0064242E /* ContactsModel.swift */; };
+		4AA75CC6213C320B0064242E /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CC5213C320B0064242E /* Company.swift */; };
+		4AA75CC8213C32340064242E /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CC7213C32340064242E /* AddressModel.swift */; };
+		4AA75CCB213C32470064242E /* GeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CCA213C32470064242E /* GeoModel.swift */; };
+		4AA75CCE213C3CD60064242E /* ContactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CCD213C3CD60064242E /* ContactListViewModel.swift */; };
+		4AA75CD0213C42FC0064242E /* ContactUserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CCF213C42FC0064242E /* ContactUserMapper.swift */; };
+		4AA75CD2213D158B0064242E /* InfoViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CD1213D158B0064242E /* InfoViewCellViewModel.swift */; };
+		4AA75CD5213D17B30064242E /* InfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CD4213D17B30064242E /* InfoCellModel.swift */; };
+		4AA75CD8213D1D4C0064242E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CD7213D1D4C0064242E /* Toast.swift */; };
+		4AA75CDA213D1E070064242E /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CD9213D1E070064242E /* ContactDetailViewModel.swift */; };
+		4AA75CDC213D30250064242E /* GoogleMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CDB213D30250064242E /* GoogleMapView.swift */; };
+		4AA75CDE213D303B0064242E /* GoogleMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA75CDD213D303B0064242E /* GoogleMapView.xib */; };
+		4AA75CE4213D31D30064242E /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CE3213D31D30064242E /* MapModel.swift */; };
+		4AA75CE7213D32710064242E /* GoogleMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CE6213D32710064242E /* GoogleMapViewModel.swift */; };
+		4AA75CE9213D39640064242E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CE8213D39640064242E /* MapViewController.swift */; };
+		4AA75CEB213D3C930064242E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CEA213D3C930064242E /* MapViewModel.swift */; };
+		4AA75CED213D68310064242E /* ContactListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CEC213D68310064242E /* ContactListViewModelTests.swift */; };
+		4AA75CF1213D69630064242E /* MockContactService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CF0213D69630064242E /* MockContactService.swift */; };
+		4AA75CF3213D6CBD0064242E /* ContactServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CF2213D6CBD0064242E /* ContactServiceTests.swift */; };
+		4AA75CF5213D6CFF0064242E /* MockWebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CF4213D6CFF0064242E /* MockWebManager.swift */; };
+		4AA75CF7213D70FB0064242E /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AA75CF6213D70FB0064242E /* MockData.json */; };
+		4AA75CFB213D786A0064242E /* ContactDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA75CFA213D786A0064242E /* ContactDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +64,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C999C50E64D3618802702F7 /* Pods_Bykea_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bykea_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A35BCDA213BFFD2007B80CF /* Bykea_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bykea_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A35BCDD213BFFD2007B80CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A35BCDF213BFFD2007B80CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A35BCE2213BFFD2007B80CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A35BCE4213BFFD3007B80CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A35BCE7213BFFD3007B80CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A35BCE9213BFFD3007B80CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A35BCEE213BFFD3007B80CF /* Bykea_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bykea_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A35BCF2213BFFD3007B80CF /* Bykea_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bykea_testTests.swift; sourceTree = "<group>"; };
 		4A35BCF4213BFFD3007B80CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA75C96213C10880064242E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4AA75C98213C10A10064242E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4AA75C9B213C10C30064242E /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		4AA75C9D213C10D50064242E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4AA75CA0213C14400064242E /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		4AA75CA2213C14820064242E /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		4AA75CA6213C16A80064242E /* ContactListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewCell.swift; sourceTree = "<group>"; };
+		4AA75CA8213C1F230064242E /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		4AA75CA9213C1F230064242E /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		4AA75CAC213C254C0064242E /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
+		4AA75CB0213C25E70064242E /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		4AA75CB2213C25F30064242E /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		4AA75CB5213C26CA0064242E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4AA75CB8213C27A90064242E /* Rotues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotues.swift; sourceTree = "<group>"; };
+		4AA75CBA213C29FF0064242E /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
+		4AA75CBC213C2DC30064242E /* WebManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebManager.swift; sourceTree = "<group>"; };
+		4AA75CC1213C2E570064242E /* ContactServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactServices.swift; sourceTree = "<group>"; };
+		4AA75CC3213C2EFE0064242E /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		4AA75CC5213C320B0064242E /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		4AA75CC7213C32340064242E /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		4AA75CCA213C32470064242E /* GeoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoModel.swift; sourceTree = "<group>"; };
+		4AA75CCD213C3CD60064242E /* ContactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModel.swift; sourceTree = "<group>"; };
+		4AA75CCF213C42FC0064242E /* ContactUserMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUserMapper.swift; sourceTree = "<group>"; };
+		4AA75CD1213D158B0064242E /* InfoViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewCellViewModel.swift; sourceTree = "<group>"; };
+		4AA75CD4213D17B30064242E /* InfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCellModel.swift; sourceTree = "<group>"; };
+		4AA75CD7213D1D4C0064242E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		4AA75CD9213D1E070064242E /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
+		4AA75CDB213D30250064242E /* GoogleMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapView.swift; sourceTree = "<group>"; };
+		4AA75CDD213D303B0064242E /* GoogleMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoogleMapView.xib; sourceTree = "<group>"; };
+		4AA75CE3213D31D30064242E /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		4AA75CE6213D32710064242E /* GoogleMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewModel.swift; sourceTree = "<group>"; };
+		4AA75CE8213D39640064242E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4AA75CEA213D3C930064242E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		4AA75CEC213D68310064242E /* ContactListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewModelTests.swift; sourceTree = "<group>"; };
+		4AA75CF0213D69630064242E /* MockContactService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockContactService.swift; sourceTree = "<group>"; };
+		4AA75CF2213D6CBD0064242E /* ContactServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactServiceTests.swift; sourceTree = "<group>"; };
+		4AA75CF4213D6CFF0064242E /* MockWebManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebManager.swift; sourceTree = "<group>"; };
+		4AA75CF6213D70FB0064242E /* MockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
+		4AA75CFA213D786A0064242E /* ContactDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModelTests.swift; sourceTree = "<group>"; };
+		669E2FB5FD60E1C881106B24 /* Pods-Bykea_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bykea_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bykea_test/Pods-Bykea_test.release.xcconfig"; sourceTree = "<group>"; };
+		840573D965DF40A0437DF5D7 /* Pods-Bykea_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bykea_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bykea_test/Pods-Bykea_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D696DBA09ED6FFB197FFCCE /* Pods_Bykea_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +135,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2F339D058D6BF81487D0EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C999C50E64D3618802702F7 /* Pods_Bykea_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A35BCD1213BFFD2007B80CF = {
 			isa = PBXGroup;
 			children = (
 				4A35BCDC213BFFD2007B80CF /* Bykea_test */,
 				4A35BCF1213BFFD3007B80CF /* Bykea_testTests */,
 				4A35BCDB213BFFD2007B80CF /* Products */,
+				B811C1CC0222ADEDF0D73AF2 /* Pods */,
+				3F2F339D058D6BF81487D0EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +166,14 @@
 		4A35BCDC213BFFD2007B80CF /* Bykea_test */ = {
 			isa = PBXGroup;
 			children = (
+				4AA75CD6213D1D390064242E /* 3rdParties */,
+				4AA75C95213C10720064242E /* Utils */,
+				4AA75C94213C10590064242E /* Protocols and Extensions */,
+				4AA75CB4213C26B60064242E /* Models */,
+				4AA75C93213C10510064242E /* WebManager */,
+				4AA75C92213C10450064242E /* Map */,
+				4AA75C91213C102E0064242E /* Contacts */,
 				4A35BCDD213BFFD2007B80CF /* AppDelegate.swift */,
-				4A35BCDF213BFFD2007B80CF /* ViewController.swift */,
 				4A35BCE1213BFFD2007B80CF /* Main.storyboard */,
 				4A35BCE4213BFFD3007B80CF /* Assets.xcassets */,
 				4A35BCE6213BFFD3007B80CF /* LaunchScreen.storyboard */,
@@ -90,10 +185,234 @@
 		4A35BCF1213BFFD3007B80CF /* Bykea_testTests */ = {
 			isa = PBXGroup;
 			children = (
-				4A35BCF2213BFFD3007B80CF /* Bykea_testTests.swift */,
+				4AA75CEF213D684B0064242E /* Mocks */,
+				4AA75CEE213D68430064242E /* Tests */,
 				4A35BCF4213BFFD3007B80CF /* Info.plist */,
+				4AA75CF6213D70FB0064242E /* MockData.json */,
 			);
 			path = Bykea_testTests;
+			sourceTree = "<group>";
+		};
+		4AA75C91213C102E0064242E /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CCC213C3CBE0064242E /* ViewModel */,
+				4AA75CC0213C2E4B0064242E /* Service */,
+				4AA75CBF213C2E460064242E /* Model */,
+				4AA75C9F213C140B0064242E /* Views */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		4AA75C92213C10450064242E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CE5213D32530064242E /* ViewModel */,
+				4AA75CE2213D31BB0064242E /* Model */,
+				4AA75CDF213D31280064242E /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		4AA75C93213C10510064242E /* WebManager */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CB7213C278F0064242E /* Routes */,
+				4AA75CAF213C25C30064242E /* Model */,
+				4AA75CAE213C25530064242E /* Managers */,
+			);
+			path = WebManager;
+			sourceTree = "<group>";
+		};
+		4AA75C94213C10590064242E /* Protocols and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75C9B213C10C30064242E /* Protocols.swift */,
+				4AA75C9D213C10D50064242E /* Extensions.swift */,
+			);
+			path = "Protocols and Extensions";
+			sourceTree = "<group>";
+		};
+		4AA75C95213C10720064242E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75C96213C10880064242E /* Constants.swift */,
+				4AA75C98213C10A10064242E /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4AA75C9F213C140B0064242E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CA5213C15FD0064242E /* View */,
+				4AA75CA4213C15EC0064242E /* ViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AA75CA4213C15EC0064242E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CA0213C14400064242E /* ContactDetailViewController.swift */,
+				4AA75CA2213C14820064242E /* ContactListTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4AA75CA5213C15FD0064242E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CA6213C16A80064242E /* ContactListTableViewCell.swift */,
+				4AA75CA8213C1F230064242E /* InfoTableViewCell.swift */,
+				4AA75CA9213C1F230064242E /* InfoTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AA75CAE213C25530064242E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CAC213C254C0064242E /* AlamofireManager.swift */,
+				4AA75CBC213C2DC30064242E /* WebManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4AA75CAF213C25C30064242E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CB0213C25E70064242E /* RequestModel.swift */,
+				4AA75CB2213C25F30064242E /* ResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AA75CB4213C26B60064242E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CB5213C26CA0064242E /* UserModel.swift */,
+				4AA75CC5213C320B0064242E /* Company.swift */,
+				4AA75CC7213C32340064242E /* AddressModel.swift */,
+				4AA75CCA213C32470064242E /* GeoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4AA75CB7213C278F0064242E /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CB8213C27A90064242E /* Rotues.swift */,
+				4AA75CBA213C29FF0064242E /* Url.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		4AA75CBF213C2E460064242E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CD4213D17B30064242E /* InfoCellModel.swift */,
+				4AA75CC3213C2EFE0064242E /* ContactsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AA75CC0213C2E4B0064242E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CC1213C2E570064242E /* ContactServices.swift */,
+				4AA75CCF213C42FC0064242E /* ContactUserMapper.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4AA75CCC213C3CBE0064242E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CCD213C3CD60064242E /* ContactListViewModel.swift */,
+				4AA75CD1213D158B0064242E /* InfoViewCellViewModel.swift */,
+				4AA75CD9213D1E070064242E /* ContactDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4AA75CD6213D1D390064242E /* 3rdParties */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CD7213D1D4C0064242E /* Toast.swift */,
+			);
+			path = 3rdParties;
+			sourceTree = "<group>";
+		};
+		4AA75CDF213D31280064242E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CE1213D313A0064242E /* ViewController */,
+				4AA75CE0213D312F0064242E /* View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AA75CE0213D312F0064242E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CDB213D30250064242E /* GoogleMapView.swift */,
+				4AA75CDD213D303B0064242E /* GoogleMapView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AA75CE1213D313A0064242E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CE8213D39640064242E /* MapViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4AA75CE2213D31BB0064242E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CE3213D31D30064242E /* MapModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4AA75CE5213D32530064242E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CE6213D32710064242E /* GoogleMapViewModel.swift */,
+				4AA75CEA213D3C930064242E /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4AA75CEE213D68430064242E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CEC213D68310064242E /* ContactListViewModelTests.swift */,
+				4AA75CF2213D6CBD0064242E /* ContactServiceTests.swift */,
+				4AA75CFA213D786A0064242E /* ContactDetailViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4AA75CEF213D684B0064242E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA75CF0213D69630064242E /* MockContactService.swift */,
+				4AA75CF4213D6CFF0064242E /* MockWebManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B811C1CC0222ADEDF0D73AF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				840573D965DF40A0437DF5D7 /* Pods-Bykea_test.debug.xcconfig */,
+				669E2FB5FD60E1C881106B24 /* Pods-Bykea_test.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +422,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A35BCF7213BFFD3007B80CF /* Build configuration list for PBXNativeTarget "Bykea_test" */;
 			buildPhases = (
+				7DC118A60C7F7FD9CD097B79 /* [CP] Check Pods Manifest.lock */,
 				4A35BCD6213BFFD2007B80CF /* Sources */,
 				4A35BCD7213BFFD2007B80CF /* Frameworks */,
 				4A35BCD8213BFFD2007B80CF /* Resources */,
+				5F7A79BF085E9A387AA5F4B9 /* [CP] Embed Pods Frameworks */,
+				9B1E14FB2716948AAC381D83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +500,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A35BCE8213BFFD3007B80CF /* LaunchScreen.storyboard in Resources */,
+				4AA75CAB213C1F230064242E /* InfoTableViewCell.xib in Resources */,
+				4AA75CDE213D303B0064242E /* GoogleMapView.xib in Resources */,
 				4A35BCE5213BFFD3007B80CF /* Assets.xcassets in Resources */,
 				4A35BCE3213BFFD2007B80CF /* Main.storyboard in Resources */,
 			);
@@ -187,18 +511,110 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA75CF7213D70FB0064242E /* MockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F7A79BF085E9A387AA5F4B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bykea_test/Pods-Bykea_test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bykea_test/Pods-Bykea_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DC118A60C7F7FD9CD097B79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bykea_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B1E14FB2716948AAC381D83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bykea_test/Pods-Bykea_test-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bykea_test/Pods-Bykea_test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A35BCD6213BFFD2007B80CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A35BCE0213BFFD2007B80CF /* ViewController.swift in Sources */,
+				4AA75CC8213C32340064242E /* AddressModel.swift in Sources */,
+				4AA75CA3213C14820064242E /* ContactListTableViewController.swift in Sources */,
+				4AA75C99213C10A10064242E /* Utils.swift in Sources */,
+				4AA75CB1213C25E70064242E /* RequestModel.swift in Sources */,
+				4AA75CA1213C14400064242E /* ContactDetailViewController.swift in Sources */,
+				4AA75CE9213D39640064242E /* MapViewController.swift in Sources */,
+				4AA75CDA213D1E070064242E /* ContactDetailViewModel.swift in Sources */,
+				4AA75CDC213D30250064242E /* GoogleMapView.swift in Sources */,
+				4AA75CB3213C25F30064242E /* ResponseModel.swift in Sources */,
+				4AA75CAD213C254C0064242E /* AlamofireManager.swift in Sources */,
+				4AA75C97213C10880064242E /* Constants.swift in Sources */,
+				4AA75CD5213D17B30064242E /* InfoCellModel.swift in Sources */,
+				4AA75CCE213C3CD60064242E /* ContactListViewModel.swift in Sources */,
+				4AA75C9C213C10C30064242E /* Protocols.swift in Sources */,
+				4AA75CB9213C27A90064242E /* Rotues.swift in Sources */,
+				4AA75CD8213D1D4C0064242E /* Toast.swift in Sources */,
+				4AA75CC4213C2EFE0064242E /* ContactsModel.swift in Sources */,
+				4AA75CD2213D158B0064242E /* InfoViewCellViewModel.swift in Sources */,
+				4AA75CC6213C320B0064242E /* Company.swift in Sources */,
+				4AA75CA7213C16A80064242E /* ContactListTableViewCell.swift in Sources */,
 				4A35BCDE213BFFD2007B80CF /* AppDelegate.swift in Sources */,
+				4AA75CD0213C42FC0064242E /* ContactUserMapper.swift in Sources */,
+				4AA75CAA213C1F230064242E /* InfoTableViewCell.swift in Sources */,
+				4AA75CEB213D3C930064242E /* MapViewModel.swift in Sources */,
+				4AA75CBD213C2DC30064242E /* WebManager.swift in Sources */,
+				4AA75CBB213C29FF0064242E /* Url.swift in Sources */,
+				4AA75CE7213D32710064242E /* GoogleMapViewModel.swift in Sources */,
+				4AA75CCB213C32470064242E /* GeoModel.swift in Sources */,
+				4AA75CE4213D31D30064242E /* MapModel.swift in Sources */,
+				4AA75CB6213C26CA0064242E /* UserModel.swift in Sources */,
+				4AA75CC2213C2E570064242E /* ContactServices.swift in Sources */,
+				4AA75C9E213C10D50064242E /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +622,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A35BCF3213BFFD3007B80CF /* Bykea_testTests.swift in Sources */,
+				4AA75CF3213D6CBD0064242E /* ContactServiceTests.swift in Sources */,
+				4AA75CED213D68310064242E /* ContactListViewModelTests.swift in Sources */,
+				4AA75CFB213D786A0064242E /* ContactDetailViewModelTests.swift in Sources */,
+				4AA75CF5213D6CFF0064242E /* MockWebManager.swift in Sources */,
+				4AA75CF1213D69630064242E /* MockContactService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +776,7 @@
 		};
 		4A35BCF8213BFFD3007B80CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840573D965DF40A0437DF5D7 /* Pods-Bykea_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +795,7 @@
 		};
 		4A35BCF9213BFFD3007B80CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 669E2FB5FD60E1C881106B24 /* Pods-Bykea_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

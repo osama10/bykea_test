@@ -36,16 +36,12 @@ extension SegueHandlerType where Self: UIViewController,
 protocol Injectable {
     associatedtype T
     func inject(_: T)
-    func assertDependencies()
+   // func assertDependencies()
 }
 
 protocol ReusableView : class {  static var reuseIdentifier : String {get} }
 
-extension ReusableView where Self : UIView {
-    static var reuseIdentifier : String {
-        return String(describing: self).components(separatedBy: ".").last!
-    }
-}
+
 
 protocol NibLoadableView : class { static var nibName : String {get} }
 
@@ -55,4 +51,6 @@ protocol StoryboardInitializable {
     static var storyboardName: UIStoryboard.Storyboard { get }
     static func instantiateViewController() -> Self
 }
+
+protocol AlertsPresentable : class {}
 

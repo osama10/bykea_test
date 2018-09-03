@@ -1,0 +1,6 @@
+framework module Pods_Bykea_test {
+  umbrella header "Pods-Bykea_test-umbrella.h"
+
+  export *
+  module * { export * }
+}

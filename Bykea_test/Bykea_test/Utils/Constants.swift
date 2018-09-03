@@ -8,3 +8,7 @@
 
 import Foundation
 
+
+struct  Constants {
+    static public let googleMapsApiKey = "AIzaSyB8ONsesdHEFASjVfDA4gbNg3uvGAaYvwY"
+}

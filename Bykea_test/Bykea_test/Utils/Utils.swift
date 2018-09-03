@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import Alamofire
 class Utils {
     
     static let screenBounds = UIScreen.main.bounds
@@ -107,6 +107,10 @@ class Utils {
         view.layer.shadowOpacity = 0.4
         view.layer.shadowRadius = 5
         
+    }
+    
+    class func isConnectedToInternet()->Bool{
+        return NetworkReachabilityManager()!.isReachable
     }
     
     
